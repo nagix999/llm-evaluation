@@ -13,6 +13,6 @@ docker exec -it ollama ollama pull qwen3:1.7b
 ```
 docker build . -t llm-evaluation
 docker run --rm -it --network llm-net llm-evaluation python /app/evaluate_llm.py \
--u http://ollama:11434
+-u http://ollama:11434 \
 -m qwen3:1.7b
 ```
